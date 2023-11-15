@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/pags-style.css">
+    <title>Cine Nerdices</title>
+</head>
+<body>
+
+
+    <header>
+        <nav class="barra-nav">
+            <div class="logo">
+                <img src="../imagens/Cine Nerdices-logo.png" alt="logo do site">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                    <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                    <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                </ul>
+            </div>
+            <div class="sub-button">
+                <button><a href="SUB.html">Inscreva-se</a></button>
+            </div>
+            <div class="menu-icone">
+                <button onclick="MostraMenu()"><img class="icone" src="../imagens/menu.png"></button>
+            </div>
+        </nav>
+        <div id="menuResp">
+            <ul>
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                <li><a class="nav-link" href="SUB.html">Inscreva-se</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="banner">
+            <img src="../imagens/LOTR-banner.jpg">
+        </div>
+        <div class="apresentacao">
+            <h1>Senhor dos Anéis</h1>
+            <p>A saga de filmes "O Senhor dos Anéis" é uma trilogia cinematográfica épica baseada nos romances do autor britânico J.R.R. Tolkien. Dirigida por Peter Jackson, a trilogia foi lançada entre 2001 e 2003. A trilogia "O Senhor dos Anéis" é elogiada por sua fidelidade à fonte original, a riqueza de seus personagens e a grandiosidade de suas cenas de batalha. Os filmes receberam inúmeros prêmios, incluindo 17 Oscars para "O Retorno do Rei", tornando-se um marco na história do cinema e uma adaptação altamente respeitada da obra literária de Tolkien.</p>
+        </div>
+        
+        <div class="container">
+            <div class="curio">
+                <p>As Filmagens na Nova Zelândia:<br>
+                    A trilogia foi filmada na Nova Zelândia, terra natal do diretor Peter Jackson. A escolha desse cenário deslumbrante contribuiu significativamente para a atmosfera da Terra-média. Muitas das locações se tornaram atrações turísticas populares, como Hobbiton, que permanece como uma parte permanente da fazenda Matamata.</p>
+                <img src="../imagens/hobbit-casa.jpg">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/oscares.jpg">
+                <p>Número Recorde de Oscars:<br>
+                    "O Retorno do Rei" detém o recorde de maior número de Oscars ganhos por um único filme. Na cerimônia de 2004, o filme conquistou todos os 11 prêmios para os quais foi indicado, incluindo Melhor Filme e Melhor Diretor para Peter Jackson. Essa conquista notável destaca o sucesso e reconhecimento crítico da trilogia.</p>
+            </div>
+            
+            <div class="curio">
+                <p>Sean Bean e os Membros do Elenco Tatuados:<br>
+                    Para comemorar a experiência única de filmar a trilogia, nove membros do elenco principal, incluindo Sean Bean (Boromir), Elijah Wood (Frodo) e Orlando Bloom (Legolas), decidiram fazer tatuagens idênticas com a palavra "nove" em elvish (élfico). A tatuagem simboliza a irmandade formada durante as filmagens.</p>
+                <img src="../imagens/tatuagemLOTR.jpg">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/escrita-elfica.jpg">
+                <p>Criando a Linguagem Élfica (Élfico):<br>
+                    O linguista e autor J.R.R. Tolkien criou línguas fictícias completas para as diferentes raças de sua obra. Para os filmes, o linguista David Salo expandiu as línguas élficas de Tolkien, criando diálogos autênticos para os personagens. Os atores dedicaram tempo para aprender essas línguas, dando uma autenticidade única às suas performances.</p>
+            </div>
+            
+            <div class="curio">
+                <p>A História de Viggo Mortensen como Aragorn:<br>
+                    Viggo Mortensen, que interpretou Aragorn, mergulhou profundamente em seu papel. Ele chegou a comprar a espada usada em cena, treinou com os dublês e até quebrou dois dedos durante as filmagens. Além disso, ele contribuiu para a autenticidade da cena em que chuta um capacete, que na verdade era um capacete de metal real, causando-lhe uma lesão que permaneceu na versão final do filme.</p>
+                <img src="../imagens/aragorn.jpg">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Made by ©️ Gustavo Miranda</p>
+    </footer>
+
+
+    <script>
+        function MostraMenu() {
+            if (menuResp.style.display=='block'){
+                menuResp.style.display = 'none'
+            } else {
+                menuResp.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

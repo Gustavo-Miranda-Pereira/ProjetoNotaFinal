@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+
+/*----------------------------Menu - Cabeçalho---------------------------------*/
+
+
+header{
+    background-color: rgb(232, 187, 111);
+    box-shadow: 0px 3px 10px #464646;
+    
+}
+
+.logo > img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+.barra-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-menu > ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu > ul > li{
+    margin: 0 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.sub-button button{
+    border: 1px solid white;
+    background-color: rgb(255, 208, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sub-button button:hover{
+    background-color:rgb(160, 157, 6) ;
+}
+
+.sub-button button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu-icone{
+    display: none;
+}
+
+#menuResp{
+    display:none;
+    text-align: center;
+}
+
+
+/*---------------------------------Menu para mobile-----------------------------*/
+
+
+@media screen and (max-width: 730px){
+    .barra-nav{
+        padding: 10px;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+
+    .sub-button{
+        display: none;
+    }
+
+    .menu-icone{
+        display: block;
+    }
+
+    .menu-icone > button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menuResp ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #menuResp > ul > li{
+        display: block;
+        padding-top: 5px;
+    }
+
+    #menuResp > .sub-button{
+        width: 100%;
+    }
+
+}
+
+
+/*-----------------------------Parte Principal----------------------------------*/
+
+main {
+    width: 100%;
+    margin: 5% auto;
+}
+
+#container {
+    background-color: #EAB05E;
+    height: 80%;
+    width: 60%;
+    max-width: 650px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.596);
+    margin: auto;
+}
+/*------------------------------imagem formulário--------------------------------*/
+#imagem {
+    background: url(../imagens/cadeado.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+/*------------------------------formulário--------------------------------*/
+#formulario {
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+label > img{
+    width: 35px;
+    padding: 2px;
+}
+
+input{
+    border: none;
+}
+
+.dvtxt{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #493831;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#iemail,#isen{
+    width: 82%;
+    height: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FDEECD;
+}
+
+#iemail:focus{
+    background-color: white;
+}
+
+#isen:focus{
+    background-color: white;
+}
+
+.dvsbmt{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    color: rgb(241, 241, 241);
+    background-color: #D24858;
+    border: 1px solid #D24858;
+    cursor: pointer;
+}
+
+.dvbtn{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D24858;
+    border-radius: 10px;
+    color: #D24858;
+    cursor: pointer;
+}
+
+.dvsbmt:hover{
+    background-color: #EA8676;
+}
+
+.dvbtn:hover{
+    background-color: #EA8676;
+    color: white;
+}
+
+/*-----------------------------------Footer----------------------------------------*/
+footer{
+    background-color: #F7C873;
+    text-align: center;
+    height: 90px;
+    padding: 40px;
+}

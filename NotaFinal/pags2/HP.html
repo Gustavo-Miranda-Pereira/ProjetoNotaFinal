@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/pags-style.css">
+    <title>Cine Nerdices</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-nav">
+            <div class="logo">
+                <img src="../imagens/Cine Nerdices-logo.png" alt="logo do site">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                    <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                    <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                </ul>
+            </div>
+            <div class="sub-button">
+                <button><a href="SUB.html">Inscreva-se</a></button>
+            </div>
+            <div class="menu-icone">
+                <button onclick="MostraMenu()"><img class="icone" src="../imagens/menu.png"></button>
+            </div>
+        </nav>
+        <div id="menuResp">
+            <ul>
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                <li><a class="nav-link" href="SUB.html">Inscreva-se</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="banner">
+            <img src="../imagens/harry-potter-banner.jpg">
+        </div>
+        <div class="apresentacao">
+            <h1>Harry Potter</h1>
+            <p>A saga de filmes Harry Potter é uma série de adaptações cinematográficas dos populares livros da autora britânica J.K. Rowling. Ela consiste em oito filmes lançados entre 2001 e 2011, que contam a história do jovem bruxo Harry Potter e sua jornada no mundo mágico.</p>
+        </div>
+        
+        <div class="container">
+            <div class="curio">
+                <p>A escolha de Daniel Radcliffe como Harry Potter: Daniel Radcliffe foi escolhido para interpretar Harry Potter aos 11 anos, mesmo idade do personagem nos livros. Ele impressionou os produtores com sua atuação e comprometimento desde o início, tornando-se o rosto icônico da franquia.</p>
+                <img src="../imagens/harry-potter.jpg">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/dumbledores.jpg">
+                <p>A troca de atores para o papel de Dumbledore: Richard Harris interpretou o papel de Alvo Dumbledore nos dois primeiros filmes, mas, infelizmente, ele faleceu em 2002. Michael Gambon então assumiu o papel a partir do terceiro filme e trouxe sua própria interpretação do personagem.</p>
+            </div>
+            
+            <div class="curio">
+                <p>Os óculos de Harry Potter: Daniel Radcliffe usou mais de 160 pares de óculos durante a filmagem da série, já que os óculos de Harry eram constantemente danificados ou perdidos durante as cenas de ação.</p>
+                <img src="../imagens/óculos.jpg">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/biblioteca-hogwarts.jpg">
+                <p>Livros reais nos filmes: Muitos dos livros usados nos filmes eram livros reais, que tinham que ser destruídos ou danificados para cenas específicas. Alguns fãs dedicados notaram que as páginas dos livros às vezes estavam coladas juntas, para evitar que os atores lessem o conteúdo real durante as filmagens.</p>
+            </div>
+            
+            <div class="curio">
+                <p>Efeitos especiais premiados: A série Harry Potter ganhou vários prêmios de efeitos visuais, incluindo o Oscar de Melhores Efeitos Visuais em 2002 (Harry Potter e a Pedra Filosofal) e 2005 (Harry Potter e o Prisioneiro de Azkaban), demonstrando a qualidade dos efeitos especiais usados para trazer a magia do mundo bruxo para a tela grande.</p>
+                <img src="../imagens/oscar.jpg">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Made by ©️ Gustavo Miranda</p>
+    </footer>
+
+
+    <script>
+        function MostraMenu() {
+            if (menuResp.style.display=='block'){
+                menuResp.style.display = 'none'
+            } else {
+                menuResp.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

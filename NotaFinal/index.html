@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Cine Nerdices</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-nav">
+            <div class="logo">
+                <img src="imagens/Cine Nerdices-logo.png" alt="logo do site">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="pags2/HP.html">Harry Potter</a></li>
+                    <li><a class="nav-link" href="pags2/SW.html">Star Wars</a></li>
+                    <li><a class="nav-link" href="pags2/LOTR.html">Senhor dos Anéis</a></li>
+                </ul>
+            </div>
+            <div class="sub-button">
+                <button><a href="pags2/SUB.html">Inscreva-se</a></button>
+            </div>
+            <div class="menu-icone">
+                <button onclick="MostraMenu()"><img class="icone" src="imagens/menu.png"></button>
+            </div>
+        </nav>
+        <div id="menuResp">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="pags2/HP.html">Harry Potter</a></li>
+                <li><a class="nav-link" href="pags2/SW.html">Star Wars</a></li>
+                <li><a class="nav-link" href="pags2/LOTR.html">Senhor dos Anéis</a><li>
+                <li><a class="nav-link" href="pags2/SUB.html">Inscreva-se</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="banner">
+            <img src="imagens/banner-curiosidades.png" alt="Banner apresentação">
+        </div>
+        
+    </main>
+
+    
+    <footer>
+        <p>Made by ©️ Gustavo Miranda</p>
+    </footer>
+    
+
+    <script>
+        function MostraMenu() {
+            if (menuResp.style.display=='block'){
+                menuResp.style.display = 'none'
+            } else {
+                menuResp.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

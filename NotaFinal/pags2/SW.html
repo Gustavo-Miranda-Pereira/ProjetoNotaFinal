@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/pags-style.css">
+    <title>Cine Nerdices</title>
+</head>
+<body>
+
+
+    <header>
+        <nav class="barra-nav">
+            <div class="logo">
+                <img src="../imagens/Cine Nerdices-logo.png" alt="logo do site">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                    <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                    <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                </ul>
+            </div>
+            <div class="sub-button">
+                <button><a href="SUB.html">Inscreva-se</a></button>
+            </div>
+            <div class="menu-icone">
+                <button onclick="MostraMenu()"><img class="icone" src="../imagens/menu.png"></button>
+            </div>
+        </nav>
+        <div id="menuResp">
+            <ul>
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="HP.html">Harry Potter</a></li>
+                <li><a class="nav-link" href="SW.html">Star Wars</a></li>
+                <li><a class="nav-link" href="LOTR.html">Senhor dos Anéis</a></li>
+                <li><a class="nav-link" href="SUB.html">Inscreva-se</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="banner">
+            <img src="../imagens/star-wars-banner.jpg">
+        </div>
+        <div class="apresentacao">
+            <h1>Star Wars</h1>
+            <p>A saga de filmes Star Wars é uma icônica série cinematográfica de ficção científica criada por George Lucas. Ela começou com o lançamento de "Star Wars: Episódio IV - Uma Nova Esperança" em 1977 e se expandiu para incluir múltiplas trilogias, spin-offs e histórias relacionadas.</p>
+        </div>
+        
+        <div class="container">
+            <div class="curio">
+                <p>O Efeito Sonoro do Sabre de Luz:<br>
+                    O icônico som dos sabres de luz é uma combinação de ruídos de uma antiga película de projetor e o zumbido de um tubo de televisão antigo com interferência. O designer de som, Ben Burtt, criou essa sonoridade única, que se tornou uma das marcas registradas da saga.</p>
+                <img src="../imagens/sabre-de-luz.png">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/star-wars-ep-4.jpg">
+                <p>O Roteiro de Última Hora:<br>
+                    "Star Wars: Episódio IV - Uma Nova Esperança" enfrentou vários desafios durante a produção, incluindo revisões significativas do roteiro. George Lucas e sua equipe estavam reescrevendo partes do roteiro durante as filmagens, e muitas cenas foram ajustadas no processo de edição.</p>
+            </div>
+            
+            <div class="curio">
+                <p>Desconhecimento de Darth Vader:<br>
+                    Durante as filmagens de "Star Wars: Episódio IV - Uma Nova Esperança", o elenco não sabia sobre a reviravolta de Darth Vader ser o pai de Luke Skywalker. Apenas o diretor, George Lucas, e alguns poucos membros da equipe estavam cientes desse segredo crucial.</p>
+                <img src="../imagens/darth-vader.png">
+            </div>
+            
+            <div class="curio">
+                <img src="../imagens/yoda.jpg">
+                <p>A Origem de Yoda:<br>
+                    A criação de Yoda envolveu a colaboração de várias pessoas talentosas, incluindo o designer de maquiagem Stuart Freeborn. Diz a lenda que Freeborn baseou a aparência de Yoda em uma combinação de Albert Einstein, um gnomo e até mesmo nele mesmo.</p>
+            </div>
+            
+            <div class="curio">
+                <p>O "Wilhelm Scream":<br>
+                    Um grito específico de efeito sonoro, conhecido como o "Wilhelm Scream", tornou-se uma espécie de piada interna na indústria cinematográfica. Esse grito foi usado pela primeira vez em "A Feitiçaria do Rio" (1951) e tem sido incorporado em muitos filmes desde então, incluindo vários de Star Wars. George Lucas e sua equipe o incluíram como uma espécie de tradição.</p>
+                <img src="../imagens/stormtrooper.jpg">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Made by ©️ Gustavo Miranda</p>
+    </footer>
+
+
+    <script>
+        function MostraMenu() {
+            if (menuResp.style.display=='block'){
+                menuResp.style.display = 'none'
+            } else {
+                menuResp.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
